@@ -38,7 +38,9 @@ export const getStoryPath = (
       : bridgeSearchParams._storyblok_published
 
   // All stories that can be viewed as pages are stored in the "pages" folder.
-  const path = ['pages', ...slugs].join('/')
+  //const path = ['pages', ...slugs].join('/')
+
+  const path = slugs[0] === 'pages' ? slugs.join('/') : ['pages', ...slugs].join('/')
 
   // If the id is specified in the query (for example when embedded in the editor), it takes precedence over the slugs.
   return id ?? path
