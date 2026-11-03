@@ -21,6 +21,10 @@ const tabs = [
     label: 'About',
     href: '/about',
   },
+  {
+    label: 'Image Upload Demo',
+    href: 'pages/api-asset-upload-example',
+  }
 ]
 
 function AppBarView(props: AppbarProps) {
