@@ -45,9 +45,6 @@ export default function SupportArticle({ blok }: { blok: any }) {
             </option>
           ))}
         </select>
-        <span className="mt-1 block text-sm text-gray-500">
-          Mantén presionado Ctrl (Windows) o Cmd (Mac) para elegir varias opciones.
-        </span>
       </label>
 
       <RichTextView doc={blok.body} />
